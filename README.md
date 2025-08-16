@@ -42,24 +42,39 @@
 
     Build with Make:
 
-     <img width="639" height="80" alt="image" src="https://github.com/user-attachments/assets/a60521dc-0dfe-4303-bd6b-7eebb45fd2dd" />
+      make
+      
+      ./scheduler --policy rr --cores 2 --quantum 4
 
 
     Build with CMake:
 
-     <img width="492" height="121" alt="image" src="https://github.com/user-attachments/assets/afc9ac4a-809f-4c28-8a73-0f90d3abd91f" />
+      mkdir -p build && cd build
+      cmake .. && cmake --build . -j
+      ./scheduler --policy sjf --cores 1
+ 
 
     Usage
 
-     <img width="975" height="264" alt="image" src="https://github.com/user-attachments/assets/53a4590d-078a-47c1-b19a-fe6e8861f58c" />
+      ./scheduler [--policy rr|sjf|priority] [--cores N] [--quantum Q] [--input file.csv]
 
-    If no input is provided, the program uses a sample workload.
+        --policy  : Scheduling policy (default: rr)
+        --cores   : Number of worker threads / CPU cores (default: 2)
+        --quantum : Time quantum (ticks) for RR (default: 4, ignored for SJF/Priority)
+        --input   : Optional CSV file with processes → pid,arrival,burst,priority
 
-    CSV Example:
+       If no input is provided, the program uses a sample workload.
 
-     <img width="394" height="212" alt="image" src="https://github.com/user-attachments/assets/dbb20b20-7929-4f42-84dd-797a6d7c3abb" />
+ CSV Example:
 
-    Sample Output:
+     # pid,arrival,burst,priority
+        P1,0,7,2
+        P2,1,4,1
+        P3,2,9,3
+        P4,3,5,2
+
+
+ Sample Output:
 
      | Process | Arrival | Burst | Priority | Completion | Turnaround | Waiting |
      | ------- | ------- | ----- | -------- | ---------- | ---------- | ------- |
