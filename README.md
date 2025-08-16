@@ -121,8 +121,11 @@ Sample Output:
 
    Round Robin (Quantum = 4)
     P1 : 🟦🟦🟦🟦     🟦🟦🟦
+
     P2 :     🟩🟩🟩🟩
+
     P3 :             🟨🟨🟨🟨🟨🟨🟨🟨🟨
+   
     P4 :                         🟪🟪🟪🟪🟪
   
    SJF (Non-preemptive)
