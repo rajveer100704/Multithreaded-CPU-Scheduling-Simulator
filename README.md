@@ -10,13 +10,13 @@
 
     This project showcases Operating System fundamentals :
 
-     1.Multiprocessing & scheduling
+      1.Multiprocessing & scheduling
 
-     2.Memory management concepts
+      2.Memory management concepts
 
-     3.Synchronization & parallelism
+      3.Synchronization & parallelism
 
-     4.System-level programming with C++17
+      4.System-level programming with C++17
 
 ⚡ Features
 
@@ -26,15 +26,15 @@
 
     Tracks per-process and aggregate metrics:
 
-     1. Completion Time
+      1. Completion Time
 
-     2. Waiting Time
+      2. Waiting Time
 
-     3. Turnaround Time
+      3. Turnaround Time
 
-     4. Average Waiting / Turnaround Time
+      4. Average Waiting / Turnaround Time
 
-     5. Throughput
+      5. Throughput
 
     Modular design with Makefile and CMake support
 
@@ -91,15 +91,15 @@
 
     Logical time is used for metrics.
 
-     Worker threads simulate execution & coordinate with the scheduler using **mutex + condition_variable.**
+      Worker threads simulate execution & coordinate with the scheduler using **mutex + condition_variable.**
 
-     Ready queues differ by policy:
+      Ready queues differ by policy:
 
-      1.RR → FIFO queue with quantum slicing
+       1.RR → FIFO queue with quantum slicing
 
-      2.SJF → Min-heap ordered by burst time
+       2.SJF → Min-heap ordered by burst time
 
-      3.Priority → Min-heap ordered by priority → arrival
+       3.Priority → Min-heap ordered by priority → arrival
 
 🎯 Learning Outcomes
 
