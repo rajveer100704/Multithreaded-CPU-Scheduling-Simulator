@@ -46,9 +46,7 @@ Build with Make:
 
 make
 
-./scheduler --policy rr --cores 2 --quantum 4
-
-Build with CMake:
+<img width="639" height="80" alt="image" src="https://github.com/user-attachments/assets/a60521dc-0dfe-4303-bd6b-7eebb45fd2dd" />
 
 
 mkdir -p build
