@@ -28,16 +28,16 @@ Throughput
 Modular design with Makefile and CMake support
 
 🚀 Quick Start
-🔹 Build with Make
-make
+🔹 Build with Make/n
+make/n
 ./scheduler --policy rr --cores 2 --quantum 4
 
-🔹 Build with CMake
-mkdir -p build && cd build
-cmake .. && cmake --build . -j
+🔹 Build with CMake/n
+mkdir -p build && cd build/n
+cmake .. && cmake --build . -j/n
 ./scheduler --policy sjf --cores 1
 
-🔹 Usage
+🔹 Usage/n
 ./scheduler [--policy rr|sjf|priority] [--cores N] [--quantum Q] [--input file.csv]
 
 --policy  : Scheduling policy (default: rr)
@@ -48,24 +48,24 @@ cmake .. && cmake --build . -j
 
 If no input is provided, the program uses a sample workload.
 
-🔹 CSV Example
-# pid,arrival,burst,priority
-P1,0,7,2
-P2,1,4,1
-P3,2,9,3
-P4,3,5,2
+🔹 CSV Example/n
+ pid,arrival,burst,priority
+P1,0,7,2/n
+P2,1,4,1/n
+P3,2,9,3/n
+P4,3,5,2/n
 
 🔹 Sample Output
 Process | Arrival | Burst | Priority | Completion | Turnaround | Waiting
 -----------------------------------------------------------------------
-P1      |   0     |   7   |    2     |    7       |    7       |   0
-P2      |   1     |   4   |    1     |   11       |   10       |   6
-P3      |   2     |   9   |    3     |   20       |   18       |   9
-P4      |   3     |   5   |    2     |   25       |   22       |  17
+P1      |   0     |   7   |    2     |    7       |    7       |   0/n
+P2      |   1     |   4   |    1     |   11       |   10       |   6/n
+P3      |   2     |   9   |    3     |   20       |   18       |   9/n
+P4      |   3     |   5   |    2     |   25       |   22       |  17/n
 
-Average Waiting Time     = 8.0
-Average Turnaround Time  = 14.25
-Throughput               = 0.16 processes/unit time
+Average Waiting Time     = 8.0/n
+Average Turnaround Time  = 14.25/n
+Throughput               = 0.16 processes/unit time/n
 
 
 💡 Design Notes
