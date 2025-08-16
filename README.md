@@ -151,3 +151,12 @@
       P3 :                         🟨🟨🟨🟨🟨🟨🟨🟨🟨
     
       P4 :             🟪🟪🟪🟪🟪
+
+
+    ## 📬 Contact
+     Created by **Rajveer Singh Saggu**  
+      📧 Email: [rajveer19255@gmail.com](mailto:rajveer19255@gmail.com)  
+      🔗 LinkedIn: [Rajveer Singh Saggu](https://www.linkedin.com/in/rajveer-singh-13aa952)  
+
+       ---
+     Made with ❤️ in C++17 to simplify OS scheduling concepts.
