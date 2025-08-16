@@ -74,7 +74,7 @@ Average Waiting Time: 8.0
 Average Turnaround Time: 14.25
 Throughput: 0.16 processes/unit time
 
-Design Notes:
+💡Design Notes:
 
 Logical time is used for metrics.
 
@@ -90,4 +90,27 @@ Ready queues differ by policy:
 
 Demonstrates safe shared state, scalable worker pools, and OS-level scheduling behavior.
 
+🎯 Learning Outcomes
+
+Deep understanding of CPU scheduling policies
+
+Hands-on experience with C++ multithreading & synchronization
+
+Familiarity with system-level build tools (Make, CMake)
+
+Strong foundation for driver / OS development roles
+
+🔮 Future Work / Improvements
+
+  🧵 Preemptive Scheduling: Implement Preemptive SJF (Shortest Remaining Time First) and Preemptive Priority Scheduling
+
+  💻 Multi-core / Load Balancing: Dynamically distribute processes across multiple CPU cores
+
+  🎨 Visualization: Add a GUI or Gantt Chart to visualize process execution timelines
+
+  📂 Configurable Input: Support larger workloads and JSON/YAML-based configuration files
+
+  ⚡ Performance Profiling: Benchmark algorithms for throughput and CPU utilization
+
+  ☁️ Distributed Simulation: Extend to cluster-level scheduling across multiple machines
 
