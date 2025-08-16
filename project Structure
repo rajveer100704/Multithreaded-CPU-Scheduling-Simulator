@@ -1,0 +1,13 @@
+multithreaded-cpu-scheduler/
+├── CMakeLists.txt         # CMake build configuration
+├── Makefile               # Makefile for easy build
+├── README.md              # Project documentation
+├── src/                   # Source code
+│   ├── main.cpp
+│   ├── scheduler.cpp
+│   └── scheduler.h
+├── include/               # Header files (if separate)
+├── input/                 # Sample CSV files
+│   └── sample_workload.csv
+├── build/                 # CMake / Make build directory
+└── LICENSE                # MIT License
