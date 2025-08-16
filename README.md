@@ -17,3 +17,24 @@ Memory management concepts
 Synchronization & parallelism
 
 System-level programming with C++17
+
+⚡ Features
+
+
+Implements 3 CPU scheduling policies: RR, SJF, Priority
+
+Multithreaded execution using std::thread, mutex, and condition_variable
+
+Tracks per-process and aggregate metrics:
+
+Completion Time
+
+Waiting Time
+
+Turnaround Time
+
+Average Waiting / Turnaround Time
+
+Throughput
+
+Modular design with Makefile and CMake support
