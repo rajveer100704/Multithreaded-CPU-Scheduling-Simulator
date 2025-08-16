@@ -8,15 +8,12 @@ A lightweight C++17 simulator demonstrating classic Operating System CPU schedul
 
 ✅ Priority Scheduling (non-preemptive, smaller number = higher priority)
 
-This project showcases Operating System fundamentals relevant for roles like NVIDIA SWE Intern:
+This project showcases Operating System fundamentals :
 
-Multiprocessing & scheduling
-
-Memory management concepts
-
-Synchronization & parallelism
-
-System-level programming with C++17
+1.Multiprocessing & scheduling
+2.Memory management concepts
+3.Synchronization & parallelism
+4.System-level programming with C++17
 
 ⚡ Features
 
