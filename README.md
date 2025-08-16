@@ -59,10 +59,15 @@ If no input is provided, the program uses a sample workload.
 
 CSV Example:
 
-# pid,arrival,burst,priority
-P1,0,7,2
-P2,1,4,1
-P3,2,9,3
-P4,3,5,2
+<img width="394" height="212" alt="image" src="https://github.com/user-attachments/assets/dbb20b20-7929-4f42-84dd-797a6d7c3abb" />
+
+Sample Output:
+
+| Process | Arrival | Burst | Priority | Completion | Turnaround | Waiting |
+| ------- | ------- | ----- | -------- | ---------- | ---------- | ------- |
+| P1      | 0       | 7     | 2        | 7          | 7          | 0       |
+| P2      | 1       | 4     | 1        | 11         | 10         | 6       |
+| P3      | 2       | 9     | 3        | 20         | 18         | 9       |
+| P4      | 3       | 5     | 2        | 25         | 22         | 17      |
 
 
