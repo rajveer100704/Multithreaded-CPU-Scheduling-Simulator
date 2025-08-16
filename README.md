@@ -70,4 +70,24 @@ Sample Output:
 | P3      | 2       | 9     | 3        | 20         | 18         | 9       |
 | P4      | 3       | 5     | 2        | 25         | 22         | 17      |
 
+Average Waiting Time: 8.0
+Average Turnaround Time: 14.25
+Throughput: 0.16 processes/unit time
+
+Design Notes:
+
+Logical time is used for metrics.
+
+Worker threads simulate execution & coordinate with the scheduler using **mutex + condition_variable.**
+
+Ready queues differ by policy:
+
+   1.RR → FIFO queue with quantum slicing
+
+   2.SJF → Min-heap ordered by burst time
+
+   3.Priority → Min-heap ordered by priority → arrival
+
+Demonstrates safe shared state, scalable worker pools, and OS-level scheduling behavior.
+
 
