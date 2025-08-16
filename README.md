@@ -27,36 +27,43 @@ Multithreaded execution using std::thread, mutex, and condition_variable
 
 Tracks per-process and aggregate metrics:
 
-Completion Time
+  1. Completion Time
 
-Waiting Time
+  2. Waiting Time
 
-Turnaround Time
+  3. Turnaround Time
 
-Average Waiting / Turnaround Time
+  4. Average Waiting / Turnaround Time
 
-Throughput
+  5. Throughput
 
 Modular design with Makefile and CMake support
 
 🚀 Quick Start
-🔹 Build with Make
+Build with Make:
+
+text
 make
 ./scheduler --policy rr --cores 2 --quantum 4
+Build with CMake:
 
-
-🔹 Build with CMake
-mkdir -p build && cd build
-cmake .. && cmake --build . -j
+text
+mkdir -p build
+cd build
+cmake ..
+cmake --build .
 ./scheduler --policy sjf --cores 1
-
-🔹 Usage
+Usage
+text
 ./scheduler [--policy rr|sjf|priority] [--cores N] [--quantum Q] [--input file.csv]
+Options
+--policy : Scheduling policy (rr, sjf, priority) (default: rr)
 
---policy  : Scheduling policy (default: rr)
---cores   : Number of worker threads / CPU cores (default: 2)
+--cores : Number of worker threads / CPU cores (default: 2)
+
 --quantum : Time quantum (ticks) for RR (default: 4, ignored for SJF/Priority)
---input   : Optional CSV file with processes → pid,arrival,burst,priority
+
+--input : Optional CSV file with processes → pid,arrival,burst,priority
 
 If no input is provided, the program uses a sample workload.
 
