@@ -11,8 +11,11 @@ A lightweight C++17 simulator demonstrating classic Operating System CPU schedul
 This project showcases Operating System fundamentals :
 
 1.Multiprocessing & scheduling
+
 2.Memory management concepts
+
 3.Synchronization & parallelism
+
 4.System-level programming with C++17
 
 ⚡ Features
@@ -37,23 +40,34 @@ Tracks per-process and aggregate metrics:
 Modular design with Makefile and CMake support
 
 🚀 Quick Start
+
 Build with Make:
 
-text
+
 make
+
 ./scheduler --policy rr --cores 2 --quantum 4
+
 Build with CMake:
 
-text
+
 mkdir -p build
+
 cd build
+
 cmake ..
+
 cmake --build .
+
 ./scheduler --policy sjf --cores 1
+
+
 Usage
-text
+
 ./scheduler [--policy rr|sjf|priority] [--cores N] [--quantum Q] [--input file.csv]
+
 Options
+
 --policy : Scheduling policy (rr, sjf, priority) (default: rr)
 
 --cores : Number of worker threads / CPU cores (default: 2)
