@@ -43,36 +43,26 @@ Modular design with Makefile and CMake support
 
 Build with Make:
 
-
-make
-
 <img width="639" height="80" alt="image" src="https://github.com/user-attachments/assets/a60521dc-0dfe-4303-bd6b-7eebb45fd2dd" />
 
 
-mkdir -p build
+Build with CMake:
 
-cd build
 
-cmake ..
-
-cmake --build .
-
-./scheduler --policy sjf --cores 1
-
+<img width="492" height="121" alt="image" src="https://github.com/user-attachments/assets/afc9ac4a-809f-4c28-8a73-0f90d3abd91f" />
 
 Usage
 
-./scheduler [--policy rr|sjf|priority] [--cores N] [--quantum Q] [--input file.csv]
-
-Options
-
---policy : Scheduling policy (rr, sjf, priority) (default: rr)
-
---cores : Number of worker threads / CPU cores (default: 2)
-
---quantum : Time quantum (ticks) for RR (default: 4, ignored for SJF/Priority)
-
---input : Optional CSV file with processes → pid,arrival,burst,priority
+<img width="975" height="264" alt="image" src="https://github.com/user-attachments/assets/53a4590d-078a-47c1-b19a-fe6e8861f58c" />
 
 If no input is provided, the program uses a sample workload.
+
+CSV Example:
+
+# pid,arrival,burst,priority
+P1,0,7,2
+P2,1,4,1
+P3,2,9,3
+P4,3,5,2
+
 
